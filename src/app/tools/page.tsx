@@ -4,7 +4,7 @@ import FourierSeries from "@/components/tools/FourierSeries"
 const Tools = () => {
     return (
         <Container screen>
-            <div className="px-9 py-5 mx-9 space-y-5 mt-32">
+            <div className="px-9 py-5 lg:mx-9 space-y-5 mt-32">
                 <p className="font-black text-6xl">Tools:</p>
                 <small className="text-emerald-500 tracking-tighter italic">These are some tools I use in my studies in order to evaluate if my homework is OK.</small>
                 <div className="border-2 rounded-md px-9 py-5">

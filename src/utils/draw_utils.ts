@@ -28,7 +28,7 @@ export function draw(canvas: HTMLCanvasElement, pixels: number, f: (x: number) =
 }
 
 function funGraph(ctx: CanvasRenderingContext2D, axes: { x0: number, y0: number, scale: number, doNegativeX: boolean }, func: (x: number) => number, color: string, thick: number) {
-    let xx: number, yy: number, dx: number = 4, x0: number = axes.x0, y0: number = axes.y0, scale: number = axes.scale;
+    let xx: number, yy: number, dx: number = 2, x0: number = axes.x0, y0: number = axes.y0, scale: number = axes.scale;
     let iMax: number = Math.round((ctx.canvas.width - x0) / dx);
     let iMin: number = axes.doNegativeX ? Math.round(-x0 / dx) : 0;
     ctx.beginPath();

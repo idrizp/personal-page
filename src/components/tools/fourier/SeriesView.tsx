@@ -51,7 +51,7 @@ export default function SeriesView(props: SeriesViewProps) {
         <p className="text-center font-black my-10 text-xl">Components:</p>
         <div className="max-h-96 overflow-y-scroll">
             {props.frequencies.map((frequency, i) =>
-                i < 20 ? <FrequencyView key={frequency.real} real={frequency.real} imaginary={frequency.imaginary} i={i} w_0={props.w_0} /> : null
+                i < 20 ? <FrequencyView key={Math.random() * 100 * i} real={frequency.real} imaginary={frequency.imaginary} i={i} w_0={props.w_0} /> : null
             )}
             {props.frequencies.length > 20 && <p className="text-emerald-500">Truncated beyond 20 sinusoids.</p>}
         </div>
