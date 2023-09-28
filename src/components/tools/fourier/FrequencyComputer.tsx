@@ -53,7 +53,7 @@ const FrequencyComputer = ({ onFrequenciesUpdated }: FrequencyComputerProps) => 
             <small>Use n as the iteration variable. It accepts JS syntax.</small>
             <div className="flex flex-col gap-y-2 lg:max-w-lg m-2">
                 <p>Number of sinusoids: {max}</p>
-                <input type="range" min={1} max={100} onChange={(e) => setMax(Number(e.currentTarget.value))} className="bg-stone-800 rounded-md px-2 py-2 text-white placeholder:text-white/50" placeholder="1" />
+                <input type="range" min={1} max={100} value={max} onChange={(e) => setMax(Number(e.currentTarget.value))} className="bg-stone-800 rounded-md px-2 py-2 text-white placeholder:text-white/50" placeholder="1" />
                 <p>Real coefficient formula:</p>
                 <input type="text" className="bg-stone-800 rounded-md px-2 py-2 text-white placeholder:text-white/50" placeholder="1" onChange={(e) => setRealCoefficients(e.currentTarget.value)} />
                 <p>Imaginary coefficient formula:</p>

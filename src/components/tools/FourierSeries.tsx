@@ -5,7 +5,6 @@ import SeriesView from "./fourier/SeriesView";
 import FrequencyComputer from "./fourier/FrequencyComputer";
 
 const pi = Math.PI;
-
 const FourierSeries = () => {
     const [frequencies, setFrequencies] = useState<{ real: number, imaginary: number }[]>([{ real: 0, imaginary: 0 }]);
     return <div className="flex flex-col lg:items-center lg:justify-center">

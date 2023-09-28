@@ -19,7 +19,7 @@ const NavLink = ({ href, children }: PropsWithChildren<NavLinkProps>) => {
 
 const Navigation = () => {
     return (
-        <nav className="fixed flex flex-row w-full justify-end gap-x-4 items-center p-6 capitalize">
+        <nav className="fixed bg-stone-950 border-b-2 border-stone-950 flex flex-row w-full justify-end gap-x-4 items-center p-6 capitalize">
             <NavLink href="/">home</NavLink>
             <NavLink href="/tools">tools</NavLink>
         </nav>

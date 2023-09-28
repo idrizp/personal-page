@@ -15,9 +15,9 @@ const Project = ({ title, description, links }: ProjectProps) => {
             <h1 className="text-xl text-emerald-500">{title}</h1>
             <p>{description}</p>
             <div className="mt-5">
-                {links.map(li => <Link key={li.link} className="underline text-emerald-500" href={li.href}>
+                {links.map(li => <a key={li.link} className="underline text-emerald-500" href={li.href} target="_blank" referrerPolicy="no-referrer">
                     {li.link}
-                </Link>)}
+                </a>)}
             </div>
         </div>
     )
