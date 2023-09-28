@@ -33,7 +33,7 @@ const Home = () => {
             <ProjectList />
           </ul>
           <div id="work-experience">
-            <WorkExperience />
+            {/* <WorkExperience /> */}
           </div>
         </div>
       </div>
