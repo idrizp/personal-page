@@ -26,14 +26,30 @@ const Home = () => {
         </div>
         <div id="projects" className="flex flex-col gap-y-6 min-h-screen items-center justify-center">
           <div className="text-center">
-            <p className="lg:text-6xl font-black tracking-tighter">Projects</p>
+            <p className="text-3xl lg:text-6xl font-black tracking-tighter">Projects</p>
             <small className="text-emerald-500">Projects I have worked on over the years</small>
           </div>
           <ul className="p-6 flex flex-col gap-y-6 lg:flex-row lg:max-w-5xl lg:gap-y-5 flex-wrap lg:gap-x-6 items-center justify-center">
             <ProjectList />
           </ul>
-          <div id="work-experience">
-            {/* <WorkExperience /> */}
+          <div id="work-experience" className="min-h-screen h-full w-full flex flex-row lg:px-6 xl:px-24">
+            <WorkExperience />
+          </div>
+          <div id="contact" className="h-screen w-full flex flex-col items-center justify-center">
+            <h1 className="font-black text-emerald-500 text-4xl my-5 lg:text-7xl">Contact:</h1>
+            <div className="flex flex-col gap-y-2">
+              <p className="text-emerald-300 font-bold inline-flex gap-x-2">E-Mail:
+                <a className="text-white font-normal underline" href="mailto:idriz@idriz.dev">idriz@idriz.dev</a>
+              </p>
+              <p className="text-emerald-300 font-bold inline-flex gap-x-2">
+                LinkedIn:
+                <a className="text-white font-normal underline" target="_blank" href="https://www.linkedin.com/in/idriz-pelaj-a13a12254/">LinkedIn</a>
+              </p>
+              <p className="text-emerald-300 font-bold inline-flex gap-x-2">
+                GitHub:
+                <a className="text-white font-normal underline" target="_blank" href="https://github.com/idrizp">idrizp</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
