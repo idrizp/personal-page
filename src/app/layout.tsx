@@ -20,6 +20,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         {children}
+        <footer className='w-full p-4 text-center bg-stone-900'>
+          <p className='font-bold'>Made by Idriz Pelaj &copy; {new Date().getFullYear()}</p>
+        </footer>
       </body>
     </html>
   )
