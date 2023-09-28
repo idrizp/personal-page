@@ -24,8 +24,12 @@ const FrequencyComputer = ({ onFrequenciesUpdated }: FrequencyComputerProps) => 
 
     useEffect(() => {
         try {
-            const evaluatedRealCoefficients = eval(`(n) => ${realCoefficients}`);
-            const evaluatedImaginaryCoefficients = eval(`(n) => ${imaginaryCoefficients}`);
+            // Some more common replacements, we want exponentiation to be ^ instead of ** in the input.
+            const realCoefficientsParsed = realCoefficients.replace("^", "**");
+            const imaginaryCoefficientsParsed = imaginaryCoefficients.replace("^", "**");
+
+            const evaluatedRealCoefficients = eval(`(n) => ${realCoefficientsParsed}`);
+            const evaluatedImaginaryCoefficients = eval(`(n) => ${imaginaryCoefficientsParsed}`);
             const newFrequencies = [];
             for (let i = 0; i < max; i++) {
                 newFrequencies[i] = {
