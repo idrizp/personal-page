@@ -1,0 +1,52 @@
+:root {
+    color-scheme: light;
+    --ink: #000;
+    --accent: #39788a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+a { color: var(--accent); }
+
+main {
+    width: min(100% - 3rem, 760px);
+    margin: 4rem auto;
+}
+
+h1, h2, h3 { margin: 0; line-height: 1.15; }
+.profile-image { display: block; width: 72px; height: 72px; margin-bottom: 1rem; border-radius: 50%; object-fit: cover; }
+h1 { font-size: 2rem; }
+h2 { margin-bottom: 1rem; font-size: 1.5rem; }
+h3 { font-size: 1rem; }
+.summary { margin: 1.35rem 0 1.35rem; }
+.contact { display: grid; gap: 0.1rem; margin: 0; font-style: normal; }
+.contact a { overflow-wrap: anywhere; }
+section { margin-top: 2.5rem; }
+.job + .job { margin-top: 1.2rem; }
+.job-heading { margin-bottom: 0.75rem; font-size: 1rem; }
+ul { margin: 0; padding-left: 2.1rem; list-style: none; }
+li { position: relative; padding-left: 0.25rem; }
+li::before { content: "-"; position: absolute; left: -1.45rem; }
+li + li { margin-top: 0.35rem; }
+.skill-list { display: grid; gap: 0.85rem; margin: 0; }
+.skill-list div { display: block; }
+dt { display: inline; }
+dt::after { content: ": "; }
+dd { display: inline; margin: 0; }
+.education { margin: 0; }
+
+@media (max-width: 620px) {
+    main { width: auto; margin: 2rem 1.5rem; }
+}
+
+@media print {
+    main { width: auto; margin: 0; }
+}
